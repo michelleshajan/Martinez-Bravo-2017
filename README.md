@@ -1,6 +1,6 @@
 # Replication of Martinez-Bravo (2017)
 
-This repository contains Stata code that replicates parts of Monica Martinez-Bravo's "The Local Political Economy Effects of School Construction in Indonesia" (*American Economic Journal: Applied Economics*, 2017). The paper uses the 1970s INPRES school construction programme and the staggered timing of village elections to estimate how local governance affects public good provision.
+This repository contains Stata code that replicates parts of Monica Martinez-Bravo's "The Local Political Economy Effects of School Construction in Indonesia" (*American Economic Journal: Applied Economics*, 2017). The paper uses the 1970s INPRES school construction programme and the staggered timing of village elections to estimate how local governance affects public good provision (I focus on presence of a doctor in the village).
 
 
 ## Requirements
