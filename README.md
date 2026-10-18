@@ -23,7 +23,7 @@ martinez-bravo-replication/
 │   ├── 04_heterogeneity.do    # INPRES intensity and baseline deficiency
 │   └── 05_robustness.do       # covariate check and placebo test
 ├── data/
-│   └── README.md              # data source instructions (the .dta file is not tracked)
+    └── README.md              # data source instructions (the .dta file is not tracked)
 
 ```
 
