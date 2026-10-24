@@ -7,18 +7,18 @@ label define gr 1 "1992-93" 2 "1994-96" 3 "1997-2000"
 label values group gr
 
 
-* 2.4 INTENSITY DiD (pooled)
+* INTENSITY DiD (pooled)
 reghdfe doc POST i.POST##c.num_PSINPRES1980, ///
     absorb(v_id year) vce(cluster idkab_num)
 margins POST, dydx(num_PSINPRES1980)											/* Marginal effect of one more school by POST status*/
 
 
-* 2.5 HETEROGENEITY by baseline provision (bdum)
+* HETEROGENEITY by baseline provision (bdum)
 reghdfe doc i.POST##i.bdum##c.num_PSINPRES1980, ///
     absorb(v_id year) vce(cluster idkab_num)
 margins bdum, dydx(num_PSINPRES1980) at(POST=(0 1))								/* Marginal effect of intensity by bdum and POST*/
 
-* Run 2.4 and 2.5 within each election group
+* Run above within each election group
 forvalues g = 1/3 {
 reghdfe doc i.POST##c.num_PSINPRES1980 if group==`g', ///
         absorb(v_id year) vce(cluster idkab_num)
